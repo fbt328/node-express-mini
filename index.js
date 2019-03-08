@@ -5,11 +5,14 @@ const db = require('./data/db.js')
 
 const server = express();
 server.use(express.json());
-PORT = process.env.PORT || 4000;
+
+PORT = process.env.PORT || 9090;
 // test .get to make sure the server is working
 // server.get('/', (req, res) => {
 //     res.send('Hello World, from node-express-mini');
 // });
+
+
 
 // | GET    | /api/users     | Returns an array of all the user objects contained in the database.
 server.get('/api/users', (req, res) => {
