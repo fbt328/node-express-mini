@@ -1,11 +1,11 @@
 // implement your API here
+require('dotenv').config();
 const express = require('express');
 const db = require('./data/db.js')
 
-const port = 9090;
 const server = express();
 server.use(express.json());
-
+PORT = process.env.PORT || 4000;
 // test .get to make sure the server is working
 // server.get('/', (req, res) => {
 //     res.send('Hello World, from node-express-mini');
