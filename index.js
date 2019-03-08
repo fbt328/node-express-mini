@@ -87,6 +87,6 @@ server.get('/api/users/:id', (req, res) => {
 
 
 // server.listen should be the last bit
-server.listen(port, () => {
-    console.log(`server is now listening on port ${port}`);
+server.listen(PORT, () => {
+    console.log(`server is now listening on port ${PORT}`);
 });
